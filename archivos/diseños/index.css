@@ -1,0 +1,509 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+/* configuracion del menu header*/
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: hsl(0, 45%, 52%);
+}
+.titulo{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+.logotitulo{
+    width: 80px;
+    height: 70px;
+}
+.menu1{
+    padding-left: 180px;
+    font-size: 20px;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    margin-top: 20px;
+}
+ul, ol{
+    list-style: none;
+}
+.menu1 li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.menu1 li a:hover{
+    background-color: rgb(15, 15, 15);
+}
+.menu1 li{
+    float: left;
+}
+.menu1 li ul{
+    display: none;
+    position: relative;
+    min-width: 140px;
+}
+.menu1 li:hover > ul{
+    display: block;
+}
+
+.redes{
+    margin-left: 180px;
+    margin-top: 20px;
+}
+.redesul{
+    list-style: none;
+}
+.redesli{
+    display: inline;
+    padding: 10px;
+}
+
+.redesimg{
+    height: 30px;
+    width: 30px;
+}
+
+
+
+/*Titulo y detalles (historia con fotos)*/
+
+.espacio{
+    background-color: hsl(0, 45%, 52%);
+    margin-top: 5px;
+}
+marquee{
+    color: white;
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;    
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 100px;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: rgb(248, 9, 9);
+    color: white;
+}
+
+h4{
+    margin-left: 500px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 40px;
+
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.tituloporque{
+    margin-left: 500px;
+    margin-bottom: 20px;
+}
+.intro{
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    
+}
+.imgintro{
+    width: 600px;
+    border-radius: 20px;
+    margin-top: 0px;
+    transition: transform .2s;
+}
+.imgintro:hover{
+    transform: scale(1.03);
+}
+
+p{
+    text-align: justify;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.quienessomos{
+    padding-right: 30px;
+}
+.porqueelegirnos{
+    padding-left: 30px;
+}
+
+.text3{
+    list-style:circle;
+    margin-left: 15px;
+}
+.li11{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+
+.subfoto{
+    list-style: none;
+    text-align: center;
+}
+.subfoto li{
+    display: inline;
+}
+.subfoto1{
+    width: 140px;
+    height: 90px;
+    border-radius: 10px;
+    margin-top: 5px;
+    transition: transform .2s;
+}
+.subfoto1:hover{
+    transform: scale(1.5);
+}
+.subfoto2{
+    width: 140px;
+    height: 90px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    transition: transform .2s;
+}
+.subfoto2:hover{
+    transform: scale(1.5);
+}
+/*Cursos*/
+
+.titulocursos{
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 10px;
+    
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.debajotitulo{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.cursodiv{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0,0,0,.4);
+    text-align: center;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .back .link {
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back .link a {
+    color: #f3f3f3;
+}
+
+.card .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .back p {
+    letter-spacing: 1px;
+} 
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+
+/*Contactos*/
+
+.foto1{
+    width: 90px;
+    transition: transform .2s;
+}
+.foto1:hover{
+    transform: scale(1.1);
+}
+.general{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    background-color: rgb(243, 222, 222);
+
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.div1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    margin-left: 70px;
+}
+.divimg{
+    margin-right: 20px;
+    margin-top: 20px
+}
+.text{
+    text-align: center;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.text1{
+    text-align: center;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+    font-size: 25px;
+}
+.text2{
+    text-align: center;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+    font-size: 20px;
+}
+
+/*Footer*/
+.fin{
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: hsl(0, 69%, 42%);
+}
+.fintex{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+
+    color: white;
+
+    font-size: 20px;
+}
+
+
+/*Videos*/
+.videos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+video{
+    width: 100%;
+    height: 100%;
+}
+.video1{
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgb(221, 11, 11);
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    margin: 10px;
+}
+.video2{
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgb(221, 11, 11);
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    margin: 10px;
+}
+.video3{
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgb(221, 11, 11);
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    margin: 10px;
+}
+.video4{
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgb(221, 11, 11);
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    margin: 10px;
+}
+.video5{
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgb(221, 11, 11);
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    margin: 10px;
+}
+.video6{
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgb(221, 11, 11);
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    margin: 10px;
+}
+.video7{
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgb(221, 11, 11);
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    margin: 10px;
+}
+.video8{
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgb(221, 11, 11);
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    margin: 10px;
+}
+.video9{
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgb(221, 11, 11);
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    margin: 10px;
+}
+.video10{
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgb(221, 11, 11);
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    margin: 10px;
+}
+.video11{
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgb(221, 11, 11);
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    margin: 10px;
+}
+.video12{
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgb(221, 11, 11);
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    margin: 10px;
+}
